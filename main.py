@@ -55,7 +55,7 @@ def draw():
         type3.draw()
     if mode == 'game':
         space.draw()
-        screen.draw.text(f'{count}', pos=(10, 10), color='white', fontsize=36)
+        screen.draw.text(f'{count}', pos=(10, 10), color='black', fontsize=36)
         for i in range(len(meteors)):
             meteors[i].draw()
         ship.draw()
@@ -65,7 +65,7 @@ def draw():
             bullets[i].draw()
     elif mode == 'end':
         space.draw()
-        screen.draw.text(f"GAME OVER\n{count}\nPRESS 'ENTER' FOR PLAY AGAIN", center=(300, 200), color="white",
+        screen.draw.text(f"GAME OVER\n{count}\nPRESS 'ENTER' FOR PLAY AGAIN", center=(300, 200), color="black",
                          fontsize=36)
         if keyboard.RETURN:
             mode = 'menu'
